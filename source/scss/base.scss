@@ -23,7 +23,10 @@
     min-height: 1px;
     float: left;
     padding: 0 $gutterSize;
-    border: 2px solid black;
+}
+
+.item {
+    background-color: orange;
 }
 
 @media (min-width: 320px) {
