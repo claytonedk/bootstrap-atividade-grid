@@ -1,0 +1,23 @@
+@mixin grid($containerSize)
+{
+    @for $i from 1 through $containerSize
+    {
+        @media (min-width: 1200px) {
+            .col-#{$i}{
+                width: ($i / $containerSize) * 100%;
+            }
+        }
+        
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .col-#{$i}{
+                width: 33%;
+            }
+        }
+        
+        @media (min-width: 255px) and (max-width: 767px) {
+            .col-#{$i}{
+                width: 100%;
+            }
+        }
+    }
+}
